@@ -1,8 +1,14 @@
-<h1>Angular Speed: aplicaciones de alto rendimiento</h1>
+<app-nav-bar [filter]="filter"></app-nav-bar>
+<div *ngIf="loading" style="width:100%;background-color:cadetblue;padding-left:5em;font-size:100%;padding-top:1em;padding-bottom:1em;font-size:130%;">Loading... please wait</div>
+<div class="container" style="margin-left:1.2em;">
+  <div class="section">
+    <h3>Angular Speed</h3>
 
-<router-outlet></router-outlet>
+    <router-outlet></router-outlet>
 
-<footer>
-  <a href="https://trainingit.es/">Training IT</a>
-  <small>A course By <a href="https://twitter.com/albertobasalo">Alberto Basalo</a></small>
-</footer>
+    <footer style="margin-top:3em;">
+      <a href="https://trainingit.es/">Training IT</a>
+      <small>A course By <a href="https://twitter.com/albertobasalo">Alberto Basalo</a></small>
+    </footer>
+  </div>
+</div>
